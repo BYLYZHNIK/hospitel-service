@@ -1,19 +1,19 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
   <div class="container">
+    <DefaultHeader/>
     <div>
       <Logo />
       <h1 class="title">
         hospitel-service
       </h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
+        <nuxt-link to='/signin'>
+          signin
+        </nuxt-link>
+        <nuxt-link to='/signup'>
+          signup
+        </nuxt-link>
+
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
@@ -28,7 +28,13 @@
 </template>
 
 <script>
-export default {}
+import DefaultHeader from "~/components/DefaultHeader";
+export default {
+  components: {DefaultHeader},
+  comments: {
+    DefaultHeader,
+  }
+}
 </script>
 
 <style>
