@@ -24,10 +24,10 @@
               Войти
             </button>
             <div class="pt-2">
-              <button type="primary" class="btn btn-secondary">
-              <a href="/signup" class="text-white">Создать аккаунт</a>
-              </button>
             </div>
+
+            <a href="/signup" class="text-black-50">Создать аккаунт</a>
+
           </div>
         </form>
       </div>
